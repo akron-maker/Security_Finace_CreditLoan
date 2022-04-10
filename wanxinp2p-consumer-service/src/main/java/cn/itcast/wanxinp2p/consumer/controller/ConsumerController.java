@@ -35,19 +35,6 @@ public class ConsumerController implements ConsumerAPI {
         @Autowired
         private ConsumerService consumerService;
 
-        @ApiOperation("测试hello")
-        @GetMapping(path = "/hello")
-        public String hello(){
-            return "hello";
-        }
-
-        @ApiOperation("测试hi")
-        @PostMapping(path="/hi")
-        @ApiImplicitParam(name="name",value = "姓名",required = true,dataType = "String")
-        public String hi(String name){
-            return "hi,"+name;
-        }
-
     @Override
     @ApiOperation("用户注册")
     @ApiImplicitParam(name = "consumerRegisterDTO", value = "注册信息", required = true,

@@ -120,7 +120,7 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project>
                     projectQueryDTO.getStartAnnualRate());
         } if (null != projectQueryDTO.getEndAnnualRate()) {
             queryWrapper.lambda().le(Project::getAnnualRate,
-                    projectQueryDTO.getStartAnnualRate());
+                    projectQueryDTO.getEndAnnualRate());
         } // 借款期限 -- 区间
         if (null != projectQueryDTO.getStartPeriod()) {
             queryWrapper.lambda().ge(Project::getPeriod,
