@@ -26,7 +26,7 @@ public class ElasticJobConfig {
     private String cron;
 
     /**
-     * 配置任务详细信息
+     * 配置任务详细信息，分片策略默认为平均分配
      * @param jobClass 任务执行类
      * @param cron 执行策略
      * @param shardingTotalCount 分片数量
