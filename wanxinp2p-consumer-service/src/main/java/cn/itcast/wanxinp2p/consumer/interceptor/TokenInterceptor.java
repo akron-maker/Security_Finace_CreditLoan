@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Token拦截处理
+ * Token拦截处理,在请求进入controller之前拦截请求，解析成为java对象放到请求中
  */
 public class TokenInterceptor implements HandlerInterceptor {
 
