@@ -1,4 +1,4 @@
-package cn.itcast.wanxinp2p.api;
+package cn.itcast.wanxinp2p.api.account;
 
 
 import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
